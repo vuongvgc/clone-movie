@@ -16,7 +16,51 @@
 </head>
 <body>
     <!-- header  -->
-    <header></header>
+    <header class="container">
+        <!-- hotline -->
+        <p class="bg-dark text-white text-right mb-0">
+            <!-- mx-3 3 = 1rem =>  3 = 16px -->
+            <i class="fas fa-phone-alt"></i>
+            <span class=" mx-3 border-right pr-3">
+                0330 123 4567
+            </span>
+            <i class="fa fa-search"></i>
+        </p>
+
+        <!-- navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- navbar-dark navbar-light: tuong phan ten class-->
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.svg" alt="Movie">
+            </a>
+            <!-- data target : lay data when click btn hien noi dung o nav ra  -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmovieheader" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- nav -->
+            <div class="collapse navbar-collapse" id="navbarmovieheader">
+              <ul class="navbar-nav ml-auto text-uppercase">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">What's on</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Shortcodes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </header>
+
+
     <!-- carousel section -->
     <section class="movieCarousel__section"></section>
     <!-- New in section -->

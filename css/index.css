@@ -10,3 +10,37 @@
 html, body {
     font-family: 'Roboto Condensed', sans-serif;
 }
+/* ------------------- */
+/* --Header section--- */
+/* ------------------- */
+#navbarmovieheader .navbar-nav {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+#navbarmovieheader .nav-item {
+    padding: 1rem 1rem .5rem;
+}
+#navbarmovieheader .nav-link {
+    color: #fff;
+}
+#navbarmovieheader .nav-item::after {
+    display: block;
+    width: 0;
+    content: '';
+    height: 2px;
+    background: linear-gradient(to right,#fbbd61,#ec7532);
+    transition: all .5s;
+}
+#navbarmovieheader .nav-item:hover::after  {
+    width: 100%;
+}
+
+/* active  */
+#navbarmovieheader .nav-item.active::after {
+    display: block;
+    width: 100%;
+    content: '';
+    height: 2px;
+    background: linear-gradient(to right,#fbbd61,#ec7532);
+    transition: all .5s;
+}
+
