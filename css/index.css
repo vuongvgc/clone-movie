@@ -22,6 +22,7 @@ html, body {
 #navbarmovieheader .nav-link {
     color: #fff;
 }
+/* hover  */
 #navbarmovieheader .nav-item::after {
     display: block;
     width: 0;
@@ -33,7 +34,6 @@ html, body {
 #navbarmovieheader .nav-item:hover::after  {
     width: 100%;
 }
-
 /* active  */
 #navbarmovieheader .nav-item.active::after {
     display: block;
@@ -42,5 +42,40 @@ html, body {
     height: 2px;
     background: linear-gradient(to right,#fbbd61,#ec7532);
     transition: all .5s;
+}
+
+/* ------------------- */
+/* --Carousel section--- */
+/* ------------------- */
+/* caption left  */
+#carouselMovie  .carousel-inner .carousel-item .carousel-caption {
+    /* caption left  */
+    text-align: left;
+    /* cang giua absolute  */
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#carouselMovie  .carousel-indicators li {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #fff;
+    opacity: 1;
+    /* background-clip: padding-box; when set background color*/
+}
+#carouselMovie  .carousel-indicators li.active {
+    background-color: #fff;
+}
+#carouselMovie .carousel-indicators {
+    justify-content: flex-start;
+    /* can deu voi caption  */
+    width: 80%;
+    left: 50%;
+    bottom: 80px;
+    transform: translateX(-50%);
+    margin-left: 0;
 }
 
