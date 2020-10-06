@@ -126,19 +126,231 @@
           </div>
     </section>
     <!-- New in section -->
-    <section class="newIn__section">
-        
+    <section class="newIn__section container">
+        <h2 class="py-3">New In</h2>
+        <div class="newIn__content">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 ">
+                    <div class="newIn__img">
+                        <img  class="img-fluid" src="./img/movie-1.jpg" alt="movie">
+                        <div class="newIn__overlay">
+                            &nbsp;
+                        </div>
+                        <div class="newIn__play">
+                            <i class="fa fa-play"></i>
+                            <p><a href="#">Read More..</a></p>
+                            <p>Released: 7 Mar, 2017</p>
+                        </div>
+                    </div>
+                    <div class="newIn__text">
+                        <p>Lorem, ipsum.</p>
+                        <div class="icon__star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                    <div class="newIn__img">
+                        <img src="./img/movie-2.jpg" alt="movie">
+                    </div>
+                    <div class="newIn__text">
+                        <p>Lorem, ipsum.</p>
+                        <div class="icon__star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                    <div class="newIn__img">
+                        <img src="./img/movie-3.jpg" alt="movie">
+                    </div>
+                    <div class="newIn__text">
+                        <p>Lorem, ipsum.</p>
+                        <div class="icon__star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                    <div class="newIn__img">
+                        <img src="./img/movie-4.jpg" alt="movie">
+                    </div>
+                    <div class="newIn__text">
+                        <p>Lorem, ipsum.</p>
+                        <div class="icon__star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </section>
     <!-- show times -->
-    <section class="showTime__section"></section>
+    <section class="showTime__section container py-4">
+        <!-- sometime nav  -->
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <!-- monday -->
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-mon-tab" data-toggle="pill" href="#pills-mon" role="tab" aria-controls="pills-home" aria-selected="true">Mon</a>
+            </li>
+            <!-- TuesDay -->
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-tues" role="tab" aria-controls="pills-profile" aria-selected="false">Tues</a>
+            </li>
+            <!-- Wednesday -->
+            <li class="nav-item">
+              <a class="nav-link" id="pills-wed-tab" data-toggle="pill" href="#pills-wed" role="tab" aria-controls="pills-wed" aria-selected="false">Wed</a>
+            </li>
+            <!-- Thursday -->
+            <li class="nav-item">
+                <a class="nav-link" id="pills-thurs-tab" data-toggle="pill" href="#pills-thurs" role="tab" aria-controls="pills-thurs" aria-selected="false">Wed</a>
+            </li>
+          </ul>
+        <!-- showtime content  -->
+          <div class="tab-content" id="pills-tabContent">
+            <!-- Monday -->
+            <div class="tab-pane fade show active" id="pills-mon" role="tabpanel" aria-labelledby="pills-mon-tab">
+                <!-- movie 1 -->
+               <div class="content row py-4">
+                   <div class="showtime__img col-3">
+                       <img class="img-fluid" src="./img/movie-5.jpg" alt="">
+                   </div>
+                   <div class="showtime__text col-9">
+                       <h2>ACTION, ADVENTURE, FANTASY</h2>
+                       <h3> It's over</h3>
+                       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                       <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                       <div class="row justify-content-between align-items-center">
+                            <div class="col-8">
+                                <div class="row justify-content-around align-items-baseline">
+                                    <i class="fa fa-clock "></i>
+                                    <span>View time</span>
+                                    <button disabled class="btn btn-secondary">14:45</button>
+                                    <button class="btn btn-secondary">15:45</button>
+                                    <button class="btn btn-secondary">16:45</button>
+                                    <button class="btn btn-secondary">17:45</button>
+                                    <button class="btn btn-secondary">18:45</button>
+                                    <button class="btn btn-secondary">19:45</button>
+                                </div>
+                            </div>
+                            <div class="col-4 text-right ">
+                                <span>105 Min</span>
+                                <span>15</span>
+                            </div>
+                       </div>
+                   </div>
+               </div>
+               <!-- movie 2  -->
+               <div class="content row py-4">
+                <div class="showtime__img col-3">
+                    <img class="img-fluid" src="./img/movie-6.jpg" alt="">
+                </div>
+                <div class="showtime__text col-9">
+                    <h2>ACTION, ADVENTURE, FANTASY</h2>
+                    <h3> It's over</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                    <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                    <div class="row justify-content-between align-items-center">
+                         <div class="col-8">
+                             <div class="row justify-content-around align-items-baseline">
+                                 <i class="fa fa-clock "></i>
+                                 <span>View time</span>
+                                 <button disabled class="btn btn-secondary">14:45</button>
+                                 <button class="btn btn-secondary">15:45</button>
+                                 <button class="btn btn-secondary">16:45</button>
+                                 <button class="btn btn-secondary">17:45</button>
+                                 <button class="btn btn-secondary">18:45</button>
+                                 <button class="btn btn-secondary">19:45</button>
+                             </div>
+                         </div>
+                         <div class="col-4 text-right ">
+                             <span>105 Min</span>
+                             <span>15</span>
+                         </div>
+                    </div>
+                </div>
+            </div>
+               <!-- movie 3 -->
+               
+            </div>
+            <!-- Tuesday -->
+            <div class="tab-pane fade" id="pills-tues" role="tabpanel" aria-labelledby="pills-tues-tab">
+                TuesDay
+            </div>
+            <!-- wednesday -->
+            <div class="tab-pane fade" id="pills-wed" role="tabpanel" aria-labelledby="pills-wed-tab">
+                Wednesday
+            </div>
+            <!-- Thursday -->
+            <div class="tab-pane fade" id="pills-thurs" role="tabpanel" aria-labelledby="pills-thurs-tab">
+                Thursday
+            </div>
+          </div>
+    </section>
     <!-- coming soon -->
-    <section class="comingSoon__section"></section>
+    <section class="comingSoon__section text-light my-5 ">
+        <div class="comingSoon__content container">
+            <h2 class="py-4">COMING SOON</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p>ACTION, ADVENTURE, SCI-FI</p>
+                    <h3>X-Men: Days of Future Past</h3>
+                    <div>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-calendar-alt"></i>
+                        <span> 07 September, 2018</span>
+                    </div>
+                    <p>The X-Men send Wolverine to the past in a desperate effort to change history and prevent an event that results in doom for both humans and mutants.</p>
+                    <a href="#">More Infor..</a>
+                </div>
+                <div class="col-6">
+                    <div class="comingsoon__video">
+                        <img src="./img/slide-3-video.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
     <!-- movie List  -->
-    <section class="movieList__section"></section>
+    <section class="movieList__section">
+        <div class="comingSoon__list container row">
+            <div class="film__item col-2">
+                <img src="./img/movie-1.jpg" alt="">
+            </div>
+        </div>
+    </section>
     <!-- Contact -->
     <section class="contact__section"></section>
     <!-- footer  -->
     <footer></footer>
+    <div class="demo1">
+        Destop frist
+    </div>
+    <div class="demo2">
+         Mobile frist
+    </div>
 
 
 

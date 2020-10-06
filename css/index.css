@@ -109,3 +109,102 @@ header {
     text-align: center;
     line-height: 30px;
 }
+/* ------------------- */
+/* --New In section--- */
+/* ------------------- */
+.newIn__img {
+    position: relative;
+    overflow: hidden;
+}
+.newIn__img:hover .newIn__overlay {
+ transform: skewX(30deg) translateX(-22%); 
+
+}
+.newIn__overlay {
+    width: 180%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    background: linear-gradient(to bottom,#fbbd61,#ec7532);
+    transform: skewX(30deg) translateX(-135%);
+    transition: all 2s;
+    opacity: 0.8;
+}
+/* transform: skewX(10deg) translateX(-22%);  */
+.newIn__play {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+/* ------------------- */
+/* --New In section--- */
+/* ------------------- */
+/* ------------------- */
+
+/* ------------------- */
+/* --ShowTime section- */
+/* ------------------- */
+
+/* ------------------- */
+/* --comingsoon section- */
+/* ------------------- */
+.comingSoon__section {
+    background: url('/img/slide-3.png') rgba(0, 0, 0, 0.9);
+}
+
+
+
+
+/* Responsive wedsite */
+/* deskstop first */ 
+/* Hoan thanh o man hinh lon sau do chinh sua cho cac man hinh nho  */
+/*  type: screen chi quan tam den screen, 
+    type: print
+    type: speech
+    type: all
+*/
+.demo1 {
+    background-color: red;
+}
+@media screen and (max-width: 1200px){
+    /* pham vi anh huong <=1200  */
+    .demo1 {
+        background-color: salmon;
+    }
+}
+@media screen and (max-width: 768px){
+    /* pham vi anh huong <=1200  */
+    .demo1 {
+        background-color: palegreen;
+    }
+}
+/* mobile first  */
+/* man hinh nho sau do chinh sua them vao cho vua o cac man hinh lon hon */
+.demo2 {
+    background-color: peru;
+}
+@media screen and (min-width: 768px){
+    /* pham anh huong se >1200px */
+    .demo2 {
+        background-color: olivedrab;
+    }
+}
+@media screen and (min-width: 1200px){
+    /* pham anh huong se >1200px */
+    .demo2 {
+        background-color: yellow;
+    }
+}
+/* set khoang screen  */
+@media screen and (min-width: 900px) and (max-width: 1000px) {
+    .demo2 {
+        background-color: tomato;
+    }
+}
+/* bootstrap su dung min width  */
