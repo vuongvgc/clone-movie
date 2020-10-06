@@ -6,6 +6,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container {
+    width: 90%;
+}
+/* html  */
+html {
+    font-size: 16px;
+    /* 1rem = 16px */
+}
 /* set font */
 html, body {
     font-family: 'Roboto Condensed', sans-serif;
@@ -22,12 +30,14 @@ html, body {
 .btn-orange:hover {
     background: linear-gradient(to right,#ec7532,#fbbd61);
 }
+
+
 /* ------------------- */
 /* --Header section--- */
 /* ------------------- */
 header {
     position: absolute;
-    top: 0px;
+    top: 5%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 9999;
@@ -63,9 +73,14 @@ header {
     transition: all .5s;
 }
 
+
 /* ------------------- */
 /* --Carousel section--- */
 /* ------------------- */
+.movieCarousel__section {
+    margin: 0;
+    padding: 0;
+}
 /* caption left  */
 #carouselMovie  .carousel-inner .carousel-item .carousel-caption {
     /* caption left  */
@@ -76,6 +91,7 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+/* style dote in carousel  */
 #carouselMovie  .carousel-indicators li {
     height: 5px;
     width: 5px;
@@ -84,6 +100,7 @@ header {
     border: 2px solid #fff;
     opacity: 1;
     /* background-clip: padding-box; when set background color*/
+    margin-left: 12px;
 }
 #carouselMovie  .carousel-indicators li.active {
     background-color: #fff;
@@ -97,17 +114,48 @@ header {
     transform: translateX(-50%);
     margin-left: 0;
 }
+
+/* style content  */
+.carousel-item .film__kind {
+    text-transform: uppercase;
+    color: #fbbd61;
+    letter-spacing: 2px;
+    visibility: hidden;
+}
+.film__name {
+    font-size: 3.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.film__description {
+    width: 80%;
+    font-size: 1.2rem;
+}
 .movie__trailer {
     display: flex;
 }
 .movie__trailer .movie__PG {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border: 1px solid #fff;
     border-radius: 50%;
     text-align: center;
-    line-height: 30px;
+    line-height: 50px;
+    margin-right: 1rem;
+}
+.movie__trailer button {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: 300;
+    padding: 10px 40px;
+    border-radius: 30px;
+    color: #fff;
+}
+/* effect  */
+.carousel-item .film__kind {
+    visibility: visible
 }
 /* ------------------- */
 /* --New In section--- */
