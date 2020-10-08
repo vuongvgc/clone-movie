@@ -228,14 +228,14 @@
     <!-- show times -->
     <section class="showTime__section container py-4">
         <!-- sometime nav  -->
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <ul class="showTime__title nav nav-pills mb-3" id="pills-tab" role="tablist">
             <!-- monday -->
-            <li class="nav-item">
-              <a class="nav-link active" id="pills-mon-tab" data-toggle="pill" href="#pills-mon" role="tab" aria-controls="pills-home" aria-selected="true">Mon</a>
+            <li class="nav-item  active">
+              <a class="nav-link" id="pills-mon-tab" data-toggle="pill" href="#pills-mon" role="tab" aria-controls="pills-home" aria-selected="true">Mon</a>
             </li>
             <!-- TuesDay -->
             <li class="nav-item">
-              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-tues" role="tab" aria-controls="pills-profile" aria-selected="false">Tues</a>
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-tues" role="tab" aria-controls="pills-profile" aria-selected="false">Tue</a>
             </li>
             <!-- Wednesday -->
             <li class="nav-item">
@@ -243,7 +243,19 @@
             </li>
             <!-- Thursday -->
             <li class="nav-item">
-                <a class="nav-link" id="pills-thurs-tab" data-toggle="pill" href="#pills-thurs" role="tab" aria-controls="pills-thurs" aria-selected="false">Wed</a>
+                <a class="nav-link" id="pills-thurs-tab" data-toggle="pill" href="#pills-thurs" role="tab" aria-controls="pills-thurs" aria-selected="false">Thu</a>
+            </li>
+            <!-- Friday  -->
+            <li class="nav-item">
+                <a class="nav-link" id="pills-fri-tab" data-toggle="pill" href="#pills-fri" role="tab" aria-controls="pills-fri" aria-selected="false">Fri</a>
+            </li>
+            <!-- Saturday -->
+            <li class="nav-item">
+                <a class="nav-link" id="pills-sat-tab" data-toggle="pill" href="#pills-sat" role="tab" aria-controls="pills-sat" aria-selected="false">Sta</a>
+            </li>
+            <!-- sunday  -->
+            <li class="nav-item">
+                <a class="nav-link" id="pills-sun-tab" data-toggle="pill" href="#pills-sun" role="tab" aria-controls="pills-sun" aria-selected="false">Sun</a>
             </li>
           </ul>
         <!-- showtime content  -->
@@ -251,79 +263,1059 @@
             <!-- Monday -->
             <div class="tab-pane fade show active" id="pills-mon" role="tabpanel" aria-labelledby="pills-mon-tab">
                 <!-- movie 1 -->
-               <div class="content row py-4">
-                   <div class="showtime__img col-3">
+                <div class="showTime__content content row py-4">
+                   <div class="showtime__img col-2">
                        <img class="img-fluid" src="./img/movie-5.jpg" alt="">
                    </div>
-                   <div class="showtime__text col-9">
-                       <h2>ACTION, ADVENTURE, FANTASY</h2>
-                       <h3> It's over</h3>
+                   <div class="showtime__text col-10">
+                       <h2>Drama</h2>
+                       <h3>Daylight</h3>
                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
                        <h2><a href="#">FULL SYNOPSIS ></a></h2>
-                       <div class="row justify-content-between align-items-center">
+                       <div class="showtime__date row justify-content-between align-items-center">
                             <div class="col-8">
                                 <div class="row justify-content-around align-items-baseline">
                                     <i class="fa fa-clock "></i>
                                     <span>View time</span>
-                                    <button disabled class="btn btn-secondary">14:45</button>
-                                    <button class="btn btn-secondary">15:45</button>
-                                    <button class="btn btn-secondary">16:45</button>
-                                    <button class="btn btn-secondary">17:45</button>
-                                    <button class="btn btn-secondary">18:45</button>
-                                    <button class="btn btn-secondary">19:45</button>
+                                    <button disabled class="btn">14:45</button>
+                                    <button class="btn">15:45</button>
+                                    <button class="btn">16:45</button>
+                                    <button class="btn">17:45</button>
+                                    <button class="btn">18:45</button>
+                                    <button class="btn">19:45</button>
                                 </div>
                             </div>
-                            <div class="col-4 text-right ">
-                                <span>105 Min</span>
-                                <span>15</span>
+                            <div class="col-4">
+                                <div class="row justify-content-end align-items-center">
+                                    <div class="col-8  text-right">
+                                        <span>105 Min</span>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="showtime__age">15</div>
+                                    </div>
+
+                                </div>
                             </div>
                        </div>
                    </div>
-               </div>
+                </div>
                <!-- movie 2  -->
-               <div class="content row py-4">
-                <div class="showtime__img col-3">
+                <div class="showTime__content content row py-4">
+                <div class="showtime__img col-2">
                     <img class="img-fluid" src="./img/movie-6.jpg" alt="">
                 </div>
-                <div class="showtime__text col-9">
+                <div class="showtime__text col-10">
                     <h2>ACTION, ADVENTURE, FANTASY</h2>
                     <h3> It's over</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
                     <h2><a href="#">FULL SYNOPSIS ></a></h2>
-                    <div class="row justify-content-between align-items-center">
+                    <div class="showtime__date row justify-content-between align-items-center">
                          <div class="col-8">
                              <div class="row justify-content-around align-items-baseline">
                                  <i class="fa fa-clock "></i>
                                  <span>View time</span>
-                                 <button disabled class="btn btn-secondary">14:45</button>
-                                 <button class="btn btn-secondary">15:45</button>
-                                 <button class="btn btn-secondary">16:45</button>
-                                 <button class="btn btn-secondary">17:45</button>
-                                 <button class="btn btn-secondary">18:45</button>
-                                 <button class="btn btn-secondary">19:45</button>
+                                 <button disabled class="btn">14:45</button>
+                                 <button class="btn">15:45</button>
+                                 <button class="btn">16:45</button>
+                                 <button class="btn">17:45</button>
+                                 <button class="btn">18:45</button>
+                                 <button class="btn">19:45</button>
                              </div>
                          </div>
-                         <div class="col-4 text-right ">
-                             <span>105 Min</span>
-                             <span>15</span>
+                         <div class="col-4">
+                             <div class="row justify-content-end align-items-center">
+                                 <div class="col-8  text-right">
+                                     <span>105 Min</span>
+                                 </div>
+                                 <div class="col-4">
+                                     <div class="showtime__age">15</div>
+                                 </div>
+
+                             </div>
                          </div>
                     </div>
                 </div>
-            </div>
+                </div>
                <!-- movie 3 -->
-               
+                <div class="showTime__content content row py-4">
+                <div class="showtime__img col-2">
+                    <img class="img-fluid" src="./img/movie-7.jpg" alt="">
+                </div>
+                <div class="showtime__text col-10">
+                    <h2>ACTION, ADVENTURE, FANTASY</h2>
+                    <h3> It's over</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                    <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                    <div class="showtime__date row justify-content-between align-items-center">
+                         <div class="col-8">
+                             <div class="row justify-content-around align-items-baseline">
+                                 <i class="fa fa-clock "></i>
+                                 <span>View time</span>
+                                 <button disabled class="btn">14:45</button>
+                                 <button class="btn">15:45</button>
+                                 <button class="btn">16:45</button>
+                                 <button class="btn">17:45</button>
+                                 <button class="btn">18:45</button>
+                                 <button class="btn">19:45</button>
+                             </div>
+                         </div>
+                         <div class="col-4">
+                             <div class="row justify-content-end align-items-center">
+                                 <div class="col-8  text-right">
+                                     <span>105 Min</span>
+                                 </div>
+                                 <div class="col-4">
+                                     <div class="showtime__age">15</div>
+                                 </div>
+
+                             </div>
+                         </div>
+                    </div>
+                </div>
+                </div>
+                <!-- movie 4 -->
+                <div class="showTime__content content row py-4">
+                <div class="showtime__img col-2">
+                    <img class="img-fluid" src="./img/movie-8.jpg" alt="">
+                </div>
+                <div class="showtime__text col-10">
+                    <h2>ACTION, ADVENTURE, FANTASY</h2>
+                    <h3> It's over</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                    <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                    <div class="showtime__date row justify-content-between align-items-center">
+                         <div class="col-8">
+                             <div class="row justify-content-around align-items-baseline">
+                                 <i class="fa fa-clock "></i>
+                                 <span>View time</span>
+                                 <button disabled class="btn">14:45</button>
+                                 <button class="btn">15:45</button>
+                                 <button class="btn">16:45</button>
+                                 <button class="btn">17:45</button>
+                                 <button class="btn">18:45</button>
+                                 <button class="btn">19:45</button>
+                             </div>
+                         </div>
+                         <div class="col-4">
+                             <div class="row justify-content-end align-items-center">
+                                 <div class="col-8  text-right">
+                                     <span>105 Min</span>
+                                 </div>
+                                 <div class="col-4">
+                                     <div class="showtime__age">15</div>
+                                 </div>
+
+                             </div>
+                         </div>
+                    </div>
+                </div>
+                </div>
             </div>
             <!-- Tuesday -->
             <div class="tab-pane fade" id="pills-tues" role="tabpanel" aria-labelledby="pills-tues-tab">
-                TuesDay
+                <!-- movie 1 -->
+                <div class="showTime__content content row py-4">
+                    <div class="showtime__img col-2">
+                        <img class="img-fluid" src="./img/movie-8.jpg" alt="">
+                    </div>
+                    <div class="showtime__text col-10">
+                        <h2>ACTION, ADVENTURE, FANTASY</h2>
+                        <h3>Captain America: The First Avenger</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                        <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                        <div class="showtime__date row justify-content-between align-items-center">
+                             <div class="col-8">
+                                 <div class="row justify-content-around align-items-baseline">
+                                     <i class="fa fa-clock "></i>
+                                     <span>View time</span>
+                                     <button disabled class="btn">14:45</button>
+                                     <button class="btn">15:45</button>
+                                     <button class="btn">16:45</button>
+                                     <button class="btn">17:45</button>
+                                     <button class="btn">18:45</button>
+                                     <button class="btn">19:45</button>
+                                 </div>
+                             </div>
+                             <div class="col-4">
+                                 <div class="row justify-content-end align-items-center">
+                                     <div class="col-8  text-right">
+                                         <span>105 Min</span>
+                                     </div>
+                                     <div class="col-4">
+                                         <div class="showtime__age">15</div>
+                                     </div>
+ 
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+                 </div>
+                <!-- movie 2  -->
+                 <div class="showTime__content content row py-4">
+                 <div class="showtime__img col-2">
+                     <img class="img-fluid" src="./img/movie-6.jpg" alt="">
+                 </div>
+                 <div class="showtime__text col-10">
+                     <h2>ACTION, ADVENTURE, FANTASY</h2>
+                     <h3> It's over</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                     <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                     <div class="showtime__date row justify-content-between align-items-center">
+                          <div class="col-8">
+                              <div class="row justify-content-around align-items-baseline">
+                                  <i class="fa fa-clock "></i>
+                                  <span>View time</span>
+                                  <button disabled class="btn">14:45</button>
+                                  <button class="btn">15:45</button>
+                                  <button class="btn">16:45</button>
+                                  <button class="btn">17:45</button>
+                                  <button class="btn">18:45</button>
+                                  <button class="btn">19:45</button>
+                              </div>
+                          </div>
+                          <div class="col-4">
+                              <div class="row justify-content-end align-items-center">
+                                  <div class="col-8  text-right">
+                                      <span>105 Min</span>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="showtime__age">15</div>
+                                  </div>
+ 
+                              </div>
+                          </div>
+                     </div>
+                 </div>
+                 </div>
+                <!-- movie 3 -->
+                 <div class="showTime__content content row py-4">
+                 <div class="showtime__img col-2">
+                     <img class="img-fluid" src="./img/movie-5.jpg" alt="">
+                 </div>
+                 <div class="showtime__text col-10">
+                     <h2>ACTION, ADVENTURE, FANTASY</h2>
+                     <h3> It's over</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                     <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                     <div class="showtime__date row justify-content-between align-items-center">
+                          <div class="col-8">
+                              <div class="row justify-content-around align-items-baseline">
+                                  <i class="fa fa-clock "></i>
+                                  <span>View time</span>
+                                  <button disabled class="btn">14:45</button>
+                                  <button class="btn">15:45</button>
+                                  <button class="btn">16:45</button>
+                                  <button class="btn">17:45</button>
+                                  <button class="btn">18:45</button>
+                                  <button class="btn">19:45</button>
+                              </div>
+                          </div>
+                          <div class="col-4">
+                              <div class="row justify-content-end align-items-center">
+                                  <div class="col-8  text-right">
+                                      <span>105 Min</span>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="showtime__age">15</div>
+                                  </div>
+ 
+                              </div>
+                          </div>
+                     </div>
+                 </div>
+                 </div>
+                 <!-- movie 4 -->
+                 <div class="showTime__content content row py-4">
+                 <div class="showtime__img col-2">
+                     <img class="img-fluid" src="./img/movie-7.jpg" alt="">
+                 </div>
+                 <div class="showtime__text col-10">
+                     <h2>ACTION, ADVENTURE, FANTASY</h2>
+                     <h3> It's over</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                     <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                     <div class="showtime__date row justify-content-between align-items-center">
+                          <div class="col-8">
+                              <div class="row justify-content-around align-items-baseline">
+                                  <i class="fa fa-clock "></i>
+                                  <span>View time</span>
+                                  <button disabled class="btn">14:45</button>
+                                  <button class="btn">15:45</button>
+                                  <button class="btn">16:45</button>
+                                  <button class="btn">17:45</button>
+                                  <button class="btn">18:45</button>
+                                  <button class="btn">19:45</button>
+                              </div>
+                          </div>
+                          <div class="col-4">
+                              <div class="row justify-content-end align-items-center">
+                                  <div class="col-8  text-right">
+                                      <span>105 Min</span>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="showtime__age">15</div>
+                                  </div>
+ 
+                              </div>
+                          </div>
+                     </div>
+                 </div>
+                 </div>
             </div>
             <!-- wednesday -->
             <div class="tab-pane fade" id="pills-wed" role="tabpanel" aria-labelledby="pills-wed-tab">
-                Wednesday
+                <!-- movie 1 -->
+                <div class="showTime__content content row py-4">
+                    <div class="showtime__img col-2">
+                        <img class="img-fluid" src="./img/movie-13.jpg" alt="">
+                    </div>
+                    <div class="showtime__text col-10">
+                        <h2>ACTION, ADVENTURE, FANTASY</h2>
+                        <h3>Fences</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                        <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                        <div class="showtime__date row justify-content-between align-items-center">
+                             <div class="col-8">
+                                 <div class="row justify-content-around align-items-baseline">
+                                     <i class="fa fa-clock "></i>
+                                     <span>View time</span>
+                                     <button disabled class="btn">14:45</button>
+                                     <button class="btn">15:45</button>
+                                     <button class="btn">16:45</button>
+                                     <button class="btn">17:45</button>
+                                     <button class="btn">18:45</button>
+                                     <button class="btn">19:45</button>
+                                 </div>
+                             </div>
+                             <div class="col-4">
+                                 <div class="row justify-content-end align-items-center">
+                                     <div class="col-8  text-right">
+                                         <span>105 Min</span>
+                                     </div>
+                                     <div class="col-4">
+                                         <div class="showtime__age">15</div>
+                                     </div>
+ 
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+                 </div>
+                <!-- movie 2  -->
+                 <div class="showTime__content content row py-4">
+                 <div class="showtime__img col-2">
+                     <img class="img-fluid" src="./img/movie-12.jpg" alt="">
+                 </div>
+                 <div class="showtime__text col-10">
+                     <h2>ACTION, ADVENTURE, FANTASY</h2>
+                     <h3> It's over</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                     <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                     <div class="showtime__date row justify-content-between align-items-center">
+                          <div class="col-8">
+                              <div class="row justify-content-around align-items-baseline">
+                                  <i class="fa fa-clock "></i>
+                                  <span>View time</span>
+                                  <button disabled class="btn">14:45</button>
+                                  <button class="btn">15:45</button>
+                                  <button class="btn">16:45</button>
+                                  <button class="btn">17:45</button>
+                                  <button class="btn">18:45</button>
+                                  <button class="btn">19:45</button>
+                              </div>
+                          </div>
+                          <div class="col-4">
+                              <div class="row justify-content-end align-items-center">
+                                  <div class="col-8  text-right">
+                                      <span>105 Min</span>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="showtime__age">15</div>
+                                  </div>
+ 
+                              </div>
+                          </div>
+                     </div>
+                 </div>
+                 </div>
+                <!-- movie 3 -->
+                 <div class="showTime__content content row py-4">
+                 <div class="showtime__img col-2">
+                     <img class="img-fluid" src="./img/movie-11.jpg" alt="">
+                 </div>
+                 <div class="showtime__text col-10">
+                     <h2>ACTION, ADVENTURE, FANTASY</h2>
+                     <h3> It's over</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                     <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                     <div class="showtime__date row justify-content-between align-items-center">
+                          <div class="col-8">
+                              <div class="row justify-content-around align-items-baseline">
+                                  <i class="fa fa-clock "></i>
+                                  <span>View time</span>
+                                  <button disabled class="btn">14:45</button>
+                                  <button class="btn">15:45</button>
+                                  <button class="btn">16:45</button>
+                                  <button class="btn">17:45</button>
+                                  <button class="btn">18:45</button>
+                                  <button class="btn">19:45</button>
+                              </div>
+                          </div>
+                          <div class="col-4">
+                              <div class="row justify-content-end align-items-center">
+                                  <div class="col-8  text-right">
+                                      <span>105 Min</span>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="showtime__age">15</div>
+                                  </div>
+ 
+                              </div>
+                          </div>
+                     </div>
+                 </div>
+                 </div>
+                 <!-- movie 4 -->
+                 <div class="showTime__content content row py-4">
+                 <div class="showtime__img col-2">
+                     <img class="img-fluid" src="./img/movie-14.jpg" alt="">
+                 </div>
+                 <div class="showtime__text col-10">
+                     <h2>ACTION, ADVENTURE, FANTASY</h2>
+                     <h3> It's over</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                     <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                     <div class="showtime__date row justify-content-between align-items-center">
+                          <div class="col-8">
+                              <div class="row justify-content-around align-items-baseline">
+                                  <i class="fa fa-clock "></i>
+                                  <span>View time</span>
+                                  <button disabled class="btn">14:45</button>
+                                  <button class="btn">15:45</button>
+                                  <button class="btn">16:45</button>
+                                  <button class="btn">17:45</button>
+                                  <button class="btn">18:45</button>
+                                  <button class="btn">19:45</button>
+                              </div>
+                          </div>
+                          <div class="col-4">
+                              <div class="row justify-content-end align-items-center">
+                                  <div class="col-8  text-right">
+                                      <span>105 Min</span>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="showtime__age">15</div>
+                                  </div>
+ 
+                              </div>
+                          </div>
+                     </div>
+                 </div>
+                 </div>
             </div>
             <!-- Thursday -->
             <div class="tab-pane fade" id="pills-thurs" role="tabpanel" aria-labelledby="pills-thurs-tab">
-                Thursday
+                <!-- movie 1 -->
+                <div class="showTime__content content row py-4">
+                    <div class="showtime__img col-2">
+                        <img class="img-fluid" src="./img/movie-1.jpg" alt="">
+                    </div>
+                    <div class="showtime__text col-10">
+                        <h2>ACTION, ADVENTURE, FANTASY</h2>
+                        <h3>Fast and Serious</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                        <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                        <div class="showtime__date row justify-content-between align-items-center">
+                             <div class="col-8">
+                                 <div class="row justify-content-around align-items-baseline">
+                                     <i class="fa fa-clock "></i>
+                                     <span>View time</span>
+                                     <button disabled class="btn">14:45</button>
+                                     <button class="btn">15:45</button>
+                                     <button class="btn">16:45</button>
+                                     <button class="btn">17:45</button>
+                                     <button class="btn">18:45</button>
+                                     <button class="btn">19:45</button>
+                                 </div>
+                             </div>
+                             <div class="col-4">
+                                 <div class="row justify-content-end align-items-center">
+                                     <div class="col-8  text-right">
+                                         <span>105 Min</span>
+                                     </div>
+                                     <div class="col-4">
+                                         <div class="showtime__age">15</div>
+                                     </div>
+ 
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+                 </div>
+                <!-- movie 2  -->
+                 <div class="showTime__content content row py-4">
+                 <div class="showtime__img col-2">
+                     <img class="img-fluid" src="./img/movie-2.jpg" alt="">
+                 </div>
+                 <div class="showtime__text col-10">
+                     <h2>ACTION, ADVENTURE, FANTASY</h2>
+                     <h3> It's over</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                     <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                     <div class="showtime__date row justify-content-between align-items-center">
+                          <div class="col-8">
+                              <div class="row justify-content-around align-items-baseline">
+                                  <i class="fa fa-clock "></i>
+                                  <span>View time</span>
+                                  <button disabled class="btn">14:45</button>
+                                  <button class="btn">15:45</button>
+                                  <button class="btn">16:45</button>
+                                  <button class="btn">17:45</button>
+                                  <button class="btn">18:45</button>
+                                  <button class="btn">19:45</button>
+                              </div>
+                          </div>
+                          <div class="col-4">
+                              <div class="row justify-content-end align-items-center">
+                                  <div class="col-8  text-right">
+                                      <span>105 Min</span>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="showtime__age">15</div>
+                                  </div>
+ 
+                              </div>
+                          </div>
+                     </div>
+                 </div>
+                 </div>
+                <!-- movie 3 -->
+                 <div class="showTime__content content row py-4">
+                 <div class="showtime__img col-2">
+                     <img class="img-fluid" src="./img/movie-3.jpg" alt="">
+                 </div>
+                 <div class="showtime__text col-10">
+                     <h2>ACTION, ADVENTURE, FANTASY</h2>
+                     <h3> It's over</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                     <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                     <div class="showtime__date row justify-content-between align-items-center">
+                          <div class="col-8">
+                              <div class="row justify-content-around align-items-baseline">
+                                  <i class="fa fa-clock "></i>
+                                  <span>View time</span>
+                                  <button disabled class="btn">14:45</button>
+                                  <button class="btn">15:45</button>
+                                  <button class="btn">16:45</button>
+                                  <button class="btn">17:45</button>
+                                  <button class="btn">18:45</button>
+                                  <button class="btn">19:45</button>
+                              </div>
+                          </div>
+                          <div class="col-4">
+                              <div class="row justify-content-end align-items-center">
+                                  <div class="col-8  text-right">
+                                      <span>105 Min</span>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="showtime__age">15</div>
+                                  </div>
+ 
+                              </div>
+                          </div>
+                     </div>
+                 </div>
+                 </div>
+                 <!-- movie 4 -->
+                 <div class="showTime__content content row py-4">
+                 <div class="showtime__img col-2">
+                     <img class="img-fluid" src="./img/movie-4.jpg" alt="">
+                 </div>
+                 <div class="showtime__text col-10">
+                     <h2>ACTION, ADVENTURE, FANTASY</h2>
+                     <h3> It's over</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                     <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                     <div class="showtime__date row justify-content-between align-items-center">
+                          <div class="col-8">
+                              <div class="row justify-content-around align-items-baseline">
+                                  <i class="fa fa-clock "></i>
+                                  <span>View time</span>
+                                  <button disabled class="btn">14:45</button>
+                                  <button class="btn">15:45</button>
+                                  <button class="btn">16:45</button>
+                                  <button class="btn">17:45</button>
+                                  <button class="btn">18:45</button>
+                                  <button class="btn">19:45</button>
+                              </div>
+                          </div>
+                          <div class="col-4">
+                              <div class="row justify-content-end align-items-center">
+                                  <div class="col-8  text-right">
+                                      <span>105 Min</span>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="showtime__age">15</div>
+                                  </div>
+ 
+                              </div>
+                          </div>
+                     </div>
+                 </div>
+                 </div>
+            </div>
+            <!-- Friday  -->
+            <div class="tab-pane fade" id="pills-fri" role="tabpanel" aria-labelledby="pills-fri-tab">
+                <!-- movie 1 -->
+                <div class="showTime__content content row py-4">
+                    <div class="showtime__img col-2">
+                        <img class="img-fluid" src="./img/movie-13.jpg" alt="">
+                    </div>
+                    <div class="showtime__text col-10">
+                        <h2>ACTION, ADVENTURE, FANTASY</h2>
+                        <h3>1001 day</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                        <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                        <div class="showtime__date row justify-content-between align-items-center">
+                             <div class="col-8">
+                                 <div class="row justify-content-around align-items-baseline">
+                                     <i class="fa fa-clock "></i>
+                                     <span>View time</span>
+                                     <button disabled class="btn">14:45</button>
+                                     <button class="btn">15:45</button>
+                                     <button class="btn">16:45</button>
+                                     <button class="btn">17:45</button>
+                                     <button class="btn">18:45</button>
+                                     <button class="btn">19:45</button>
+                                 </div>
+                             </div>
+                             <div class="col-4">
+                                 <div class="row justify-content-end align-items-center">
+                                     <div class="col-8  text-right">
+                                         <span>105 Min</span>
+                                     </div>
+                                     <div class="col-4">
+                                         <div class="showtime__age">15</div>
+                                     </div>
+ 
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+                 </div>
+                <!-- movie 2  -->
+                 <div class="showTime__content content row py-4">
+                 <div class="showtime__img col-2">
+                     <img class="img-fluid" src="./img/movie-12.jpg" alt="">
+                 </div>
+                 <div class="showtime__text col-10">
+                     <h2>ACTION, ADVENTURE, FANTASY</h2>
+                     <h3> It's over</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                     <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                     <div class="showtime__date row justify-content-between align-items-center">
+                          <div class="col-8">
+                              <div class="row justify-content-around align-items-baseline">
+                                  <i class="fa fa-clock "></i>
+                                  <span>View time</span>
+                                  <button disabled class="btn">14:45</button>
+                                  <button class="btn">15:45</button>
+                                  <button class="btn">16:45</button>
+                                  <button class="btn">17:45</button>
+                                  <button class="btn">18:45</button>
+                                  <button class="btn">19:45</button>
+                              </div>
+                          </div>
+                          <div class="col-4">
+                              <div class="row justify-content-end align-items-center">
+                                  <div class="col-8  text-right">
+                                      <span>105 Min</span>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="showtime__age">15</div>
+                                  </div>
+ 
+                              </div>
+                          </div>
+                     </div>
+                 </div>
+                 </div>
+                <!-- movie 3 -->
+                 <div class="showTime__content content row py-4">
+                 <div class="showtime__img col-2">
+                     <img class="img-fluid" src="./img/movie-11.jpg" alt="">
+                 </div>
+                 <div class="showtime__text col-10">
+                     <h2>ACTION, ADVENTURE, FANTASY</h2>
+                     <h3> It's over</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                     <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                     <div class="showtime__date row justify-content-between align-items-center">
+                          <div class="col-8">
+                              <div class="row justify-content-around align-items-baseline">
+                                  <i class="fa fa-clock "></i>
+                                  <span>View time</span>
+                                  <button disabled class="btn">14:45</button>
+                                  <button class="btn">15:45</button>
+                                  <button class="btn">16:45</button>
+                                  <button class="btn">17:45</button>
+                                  <button class="btn">18:45</button>
+                                  <button class="btn">19:45</button>
+                              </div>
+                          </div>
+                          <div class="col-4">
+                              <div class="row justify-content-end align-items-center">
+                                  <div class="col-8  text-right">
+                                      <span>105 Min</span>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="showtime__age">15</div>
+                                  </div>
+ 
+                              </div>
+                          </div>
+                     </div>
+                 </div>
+                 </div>
+                 <!-- movie 4 -->
+                 <div class="showTime__content content row py-4">
+                 <div class="showtime__img col-2">
+                     <img class="img-fluid" src="./img/movie-14.jpg" alt="">
+                 </div>
+                 <div class="showtime__text col-10">
+                     <h2>ACTION, ADVENTURE, FANTASY</h2>
+                     <h3> It's over</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                     <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                     <div class="showtime__date row justify-content-between align-items-center">
+                          <div class="col-8">
+                              <div class="row justify-content-around align-items-baseline">
+                                  <i class="fa fa-clock "></i>
+                                  <span>View time</span>
+                                  <button disabled class="btn">14:45</button>
+                                  <button class="btn">15:45</button>
+                                  <button class="btn">16:45</button>
+                                  <button class="btn">17:45</button>
+                                  <button class="btn">18:45</button>
+                                  <button class="btn">19:45</button>
+                              </div>
+                          </div>
+                          <div class="col-4">
+                              <div class="row justify-content-end align-items-center">
+                                  <div class="col-8  text-right">
+                                      <span>105 Min</span>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="showtime__age">15</div>
+                                  </div>
+ 
+                              </div>
+                          </div>
+                     </div>
+                 </div>
+                 </div>
+            </div>
+            <!-- Saturday -->
+            <div class="tab-pane fade" id="pills-sat" role="tabpanel" aria-labelledby="pills-sat-tab">
+                <!-- movie 1 -->
+                <div class="showTime__content content row py-4">
+                    <div class="showtime__img col-2">
+                        <img class="img-fluid" src="./img/movie-8.jpg" alt="">
+                    </div>
+                    <div class="showtime__text col-10">
+                        <h2>ACTION, ADVENTURE, FANTASY</h2>
+                        <h3>Young Sheldon</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                        <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                        <div class="showtime__date row justify-content-between align-items-center">
+                             <div class="col-8">
+                                 <div class="row justify-content-around align-items-baseline">
+                                     <i class="fa fa-clock "></i>
+                                     <span>View time</span>
+                                     <button disabled class="btn">14:45</button>
+                                     <button class="btn">15:45</button>
+                                     <button class="btn">16:45</button>
+                                     <button class="btn">17:45</button>
+                                     <button class="btn">18:45</button>
+                                     <button class="btn">19:45</button>
+                                 </div>
+                             </div>
+                             <div class="col-4">
+                                 <div class="row justify-content-end align-items-center">
+                                     <div class="col-8  text-right">
+                                         <span>105 Min</span>
+                                     </div>
+                                     <div class="col-4">
+                                         <div class="showtime__age">15</div>
+                                     </div>
+ 
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+                 </div>
+                <!-- movie 2  -->
+                 <div class="showTime__content content row py-4">
+                 <div class="showtime__img col-2">
+                     <img class="img-fluid" src="./img/movie-6.jpg" alt="">
+                 </div>
+                 <div class="showtime__text col-10">
+                     <h2>ACTION, ADVENTURE, FANTASY</h2>
+                     <h3> It's over</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                     <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                     <div class="showtime__date row justify-content-between align-items-center">
+                          <div class="col-8">
+                              <div class="row justify-content-around align-items-baseline">
+                                  <i class="fa fa-clock "></i>
+                                  <span>View time</span>
+                                  <button disabled class="btn">14:45</button>
+                                  <button class="btn">15:45</button>
+                                  <button class="btn">16:45</button>
+                                  <button class="btn">17:45</button>
+                                  <button class="btn">18:45</button>
+                                  <button class="btn">19:45</button>
+                              </div>
+                          </div>
+                          <div class="col-4">
+                              <div class="row justify-content-end align-items-center">
+                                  <div class="col-8  text-right">
+                                      <span>105 Min</span>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="showtime__age">15</div>
+                                  </div>
+ 
+                              </div>
+                          </div>
+                     </div>
+                 </div>
+                 </div>
+                <!-- movie 3 -->
+                 <div class="showTime__content content row py-4">
+                 <div class="showtime__img col-2">
+                     <img class="img-fluid" src="./img/movie-5.jpg" alt="">
+                 </div>
+                 <div class="showtime__text col-10">
+                     <h2>ACTION, ADVENTURE, FANTASY</h2>
+                     <h3> It's over</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                     <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                     <div class="showtime__date row justify-content-between align-items-center">
+                          <div class="col-8">
+                              <div class="row justify-content-around align-items-baseline">
+                                  <i class="fa fa-clock "></i>
+                                  <span>View time</span>
+                                  <button disabled class="btn">14:45</button>
+                                  <button class="btn">15:45</button>
+                                  <button class="btn">16:45</button>
+                                  <button class="btn">17:45</button>
+                                  <button class="btn">18:45</button>
+                                  <button class="btn">19:45</button>
+                              </div>
+                          </div>
+                          <div class="col-4">
+                              <div class="row justify-content-end align-items-center">
+                                  <div class="col-8  text-right">
+                                      <span>105 Min</span>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="showtime__age">15</div>
+                                  </div>
+ 
+                              </div>
+                          </div>
+                     </div>
+                 </div>
+                 </div>
+                 <!-- movie 4 -->
+                 <div class="showTime__content content row py-4">
+                 <div class="showtime__img col-2">
+                     <img class="img-fluid" src="./img/movie-7.jpg" alt="">
+                 </div>
+                 <div class="showtime__text col-10">
+                     <h2>ACTION, ADVENTURE, FANTASY</h2>
+                     <h3> It's over</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                     <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                     <div class="showtime__date row justify-content-between align-items-center">
+                          <div class="col-8">
+                              <div class="row justify-content-around align-items-baseline">
+                                  <i class="fa fa-clock "></i>
+                                  <span>View time</span>
+                                  <button disabled class="btn">14:45</button>
+                                  <button class="btn">15:45</button>
+                                  <button class="btn">16:45</button>
+                                  <button class="btn">17:45</button>
+                                  <button class="btn">18:45</button>
+                                  <button class="btn">19:45</button>
+                              </div>
+                          </div>
+                          <div class="col-4">
+                              <div class="row justify-content-end align-items-center">
+                                  <div class="col-8  text-right">
+                                      <span>105 Min</span>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="showtime__age">15</div>
+                                  </div>
+ 
+                              </div>
+                          </div>
+                     </div>
+                 </div>
+                 </div>
+            </div>
+            <!-- sunday  -->
+            <div class="tab-pane fade show active" id="pills-sun" role="tabpanel" aria-labelledby="pills-sun-tab">
+                <!-- movie 1 -->
+                <div class="showTime__content content row py-4">
+                   <div class="showtime__img col-2">
+                       <img class="img-fluid" src="./img/movie-5.jpg" alt="">
+                   </div>
+                   <div class="showtime__text col-10">
+                       <h2>ACTION, ADVENTURE, FANTASY</h2>
+                       <h3> It's over</h3>
+                       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                       <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                       <div class="showtime__date row justify-content-between align-items-center">
+                            <div class="col-8">
+                                <div class="row justify-content-around align-items-baseline">
+                                    <i class="fa fa-clock "></i>
+                                    <span>View time</span>
+                                    <button disabled class="btn">14:45</button>
+                                    <button class="btn">15:45</button>
+                                    <button class="btn">16:45</button>
+                                    <button class="btn">17:45</button>
+                                    <button class="btn">18:45</button>
+                                    <button class="btn">19:45</button>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="row justify-content-end align-items-center">
+                                    <div class="col-8  text-right">
+                                        <span>105 Min</span>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="showtime__age">15</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+                </div>
+               <!-- movie 2  -->
+                <div class="showTime__content content row py-4">
+                <div class="showtime__img col-2">
+                    <img class="img-fluid" src="./img/movie-6.jpg" alt="">
+                </div>
+                <div class="showtime__text col-10">
+                    <h2>ACTION, ADVENTURE, FANTASY</h2>
+                    <h3> It's over</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                    <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                    <div class="showtime__date row justify-content-between align-items-center">
+                         <div class="col-8">
+                             <div class="row justify-content-around align-items-baseline">
+                                 <i class="fa fa-clock "></i>
+                                 <span>View time</span>
+                                 <button disabled class="btn">14:45</button>
+                                 <button class="btn">15:45</button>
+                                 <button class="btn">16:45</button>
+                                 <button class="btn">17:45</button>
+                                 <button class="btn">18:45</button>
+                                 <button class="btn">19:45</button>
+                             </div>
+                         </div>
+                         <div class="col-4">
+                             <div class="row justify-content-end align-items-center">
+                                 <div class="col-8  text-right">
+                                     <span>105 Min</span>
+                                 </div>
+                                 <div class="col-4">
+                                     <div class="showtime__age">15</div>
+                                 </div>
+
+                             </div>
+                         </div>
+                    </div>
+                </div>
+                </div>
+               <!-- movie 3 -->
+                <div class="showTime__content content row py-4">
+                <div class="showtime__img col-2">
+                    <img class="img-fluid" src="./img/movie-7.jpg" alt="">
+                </div>
+                <div class="showtime__text col-10">
+                    <h2>ACTION, ADVENTURE, FANTASY</h2>
+                    <h3> It's over</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                    <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                    <div class="showtime__date row justify-content-between align-items-center">
+                         <div class="col-8">
+                             <div class="row justify-content-around align-items-baseline">
+                                 <i class="fa fa-clock "></i>
+                                 <span>View time</span>
+                                 <button disabled class="btn">14:45</button>
+                                 <button class="btn">15:45</button>
+                                 <button class="btn">16:45</button>
+                                 <button class="btn">17:45</button>
+                                 <button class="btn">18:45</button>
+                                 <button class="btn">19:45</button>
+                             </div>
+                         </div>
+                         <div class="col-4">
+                             <div class="row justify-content-end align-items-center">
+                                 <div class="col-8  text-right">
+                                     <span>105 Min</span>
+                                 </div>
+                                 <div class="col-4">
+                                     <div class="showtime__age">15</div>
+                                 </div>
+
+                             </div>
+                         </div>
+                    </div>
+                </div>
+                </div>
+                <!-- movie 4 -->
+                <div class="showTime__content content row py-4">
+                <div class="showtime__img col-2">
+                    <img class="img-fluid" src="./img/movie-8.jpg" alt="">
+                </div>
+                <div class="showtime__text col-10">
+                    <h2>ACTION, ADVENTURE, FANTASY</h2>
+                    <h3> It's over</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero laudantium atque perferendis maxime consequatur minus optio odio rerum exercitationem hic!</p>
+                    <h2><a href="#">FULL SYNOPSIS ></a></h2>
+                    <div class="showtime__date row justify-content-between align-items-center">
+                         <div class="col-8">
+                             <div class="row justify-content-around align-items-baseline">
+                                 <i class="fa fa-clock "></i>
+                                 <span>View time</span>
+                                 <button disabled class="btn">14:45</button>
+                                 <button class="btn">15:45</button>
+                                 <button class="btn">16:45</button>
+                                 <button class="btn">17:45</button>
+                                 <button class="btn">18:45</button>
+                                 <button class="btn">19:45</button>
+                             </div>
+                         </div>
+                         <div class="col-4">
+                             <div class="row justify-content-end align-items-center">
+                                 <div class="col-8  text-right">
+                                     <span>105 Min</span>
+                                 </div>
+                                 <div class="col-4">
+                                     <div class="showtime__age">15</div>
+                                 </div>
+
+                             </div>
+                         </div>
+                    </div>
+                </div>
+                </div>
             </div>
           </div>
     </section>
