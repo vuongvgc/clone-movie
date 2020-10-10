@@ -32,18 +32,25 @@ html, body {
 }
 /* header  */
 .header__secondary {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #ec7532;
     text-transform: uppercase;
-}
-.border__header {
-    content: '';
-    width: 10%;
-    height: 4px;
-    background: linear-gradient(to right,#fbbd61,#ec7532);
+    border-bottom: 1px solid #A2A2A2;
     margin-bottom: 3rem;
-
 }
+.header__secondary span {
+    display: inline-block;
+}
+.header__secondary span::after {
+    display: block;
+    width: 200%;
+    content: '';
+    height: 3px;
+    background: linear-gradient(to right,#fbbd61,#ec7532);
+    transition: all .5s;
+    margin-top: 1rem;
+}
+
 /* ------------------- */
 /* --Header section--- */
 /* ------------------- */
