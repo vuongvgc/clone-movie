@@ -43,9 +43,9 @@ html, body {
 }
 .header__secondary span::after {
     display: block;
-    width: 200%;
+    width: 120px;
     content: '';
-    height: 3px;
+    height: 4px;
     background: linear-gradient(to right,#fbbd61,#ec7532);
     transition: all .5s;
     margin-top: 1rem;
@@ -347,9 +347,47 @@ header {
 /* ------------------- */
 .comingSoon__section {
     background: url('/img/slide-3.png') rgba(0, 0, 0, 0.9);
+    padding: 2rem;
 }
+.comingSoon__section .header__secondary {
+    color: #fff;
+}
+.comingSoon__film {
+    padding: 3rem;
+}
+.comingSoon__kind {
+    text-transform: uppercase;
+    color: #ec7532;
+    letter-spacing: 2px;
+}
+.comingSoon__name {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.comingSoon__film .icon__star {
+    font-size: 10px;
+}
+.comingSoon__date {
+    color: #fff;
+}
+.comingSoon__description {
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.comingSoon__infor {
+    color: #ec7532;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 200;
 
 
+}
+.comingsoon__video {
+
+}
 
 
 /* Responsive wedsite */
