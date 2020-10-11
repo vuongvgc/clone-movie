@@ -433,7 +433,44 @@ header {
     color: #ec7532;
     text-shadow: hsla(0, 0%, 0%, 0) 1px 1px 1px;
 }
+/* ------------------- */
+/* ------footer----- - */
+/* ------------------- */
+footer {
+    background-color: #101010;
+    color: #fff;
+}
+.footer__content {
 
+}
+.footer__item h3 {
+    font-size: 1rem;
+    color: #ec7532;
+    text-transform: uppercase;
+}
+.footer__item a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    font-size: 0.8rem;
+    transition: all .2s;
+}
+.footer__item a:hover,
+.footer__copyright a:hover {
+    color: #fbbd61;
+}
+.footer__item a i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+/* copyright  */
+.footer__copyright a {
+    text-decoration: none;
+    color: #fff;
+    transition: all .2s;
+}
 
 
 
