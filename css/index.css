@@ -388,6 +388,64 @@ header {
 .comingsoon__video {
 
 }
+/* ------------------- */
+/* -Movie List section- */
+/* ------------------- */
+.movie__section {
+    background: #101010;
+    color: #fff;
+    padding: 4rem 0;
+}
+.movie__item {
+    text-align: center;
+    opacity: 0.5;
+    transition: all .5s;
+}
+.movie__item img {
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.movie__item h4 {
+    font-size: 1rem;
+}
+.movie__item p {
+    font-size: 0.9rem;
+    color: #A2A2A2;
+    margin-bottom: 0;
+}
+.movie__item:hover {
+    opacity: 1;
+}   
+/* ------------------- */
+/* -Contact  section- */
+/* ------------------- */
+.contact__section {
+    color: #000;
+    background-color: #fff;
+}
+.contact__section p {
+    font-size: 1.5rem;
+    color: #717171;
+    text-shadow: hsla(0, 0%, 0%, 0) 1px 1px 1px;
+}
+.contact__section h2 {
+    font-size: 3rem;
+    color: #ec7532;
+    text-shadow: hsla(0, 0%, 0%, 0) 1px 1px 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Responsive wedsite */
