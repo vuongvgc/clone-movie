@@ -25,11 +25,45 @@ html, body {
 }
 .btn-orange {
     background: linear-gradient(to right,#fbbd61,#ec7532);
-    transition: all .5s ease-in-out;
+
 }
-.btn-orange:hover {
-    background: #ec7532;
+/* button over play  */
+.btn__box {
+    position: relative;
 }
+.btn__header {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    width: 12rem;
+
+}
+.btn__box:hover {
+    color: #fff;
+}
+.btn__box:hover .btn__overlay {
+    transform: skewX(30deg) translateX(-22%); 
+   }
+.btn__overlay {
+       width: 180%;
+       height: 100%;
+       position: absolute;
+       top: 0;
+       left: 0;
+       content: '';
+       background: linear-gradient(to right,#ec7532 , #fbbd61);
+       transform: skewX(30deg) translateX(-135%);
+       transition: all .5s;
+       opacity: 1;
+}
+.btn__text {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}  
+/* button over play  */
 /* header  */
 .header__secondary {
     font-size: 1rem;
@@ -40,6 +74,7 @@ html, body {
 }
 .header__secondary span {
     display: inline-block;
+    z-index: 9999;
 }
 .header__secondary span::after {
     display: block;
@@ -472,5 +507,9 @@ footer {
 @media screen and (max-width: 992px){
     html {
         font-size: 12px;
+    }
+    .btn__text {
+        top: 40%;
+        
     }
 }
