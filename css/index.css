@@ -467,17 +467,10 @@ footer {
     transition: all .2s;
 }
 
-
+/* Responsive  */
 /* header  */
 @media screen and (max-width: 992px){
     html {
         font-size: 12px;
     }
-    #carouselMovie {
-        height: 100vh;
-    }
-    #carouselMovie .carousel-indicators {
-        bottom: 3px;
-    }
-    
 }
