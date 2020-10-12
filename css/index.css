@@ -170,6 +170,24 @@ header {
 }
 
 /* style content  */
+.carousel__animation {
+   animation: Blurb 5s forwards;
+}
+@keyframes Blurb {
+    0%   {
+        opacity: 0;
+    }
+    25%  {
+        opacity: 0.4;
+    }
+    50%  {
+        opacity: 0.8;
+
+    }
+    100% {
+        opacity: 1;
+    }
+}
 .carousel-item .film__kind {
     text-transform: uppercase;
     color: #fbbd61;
@@ -511,5 +529,11 @@ footer {
     .btn__text {
         top: 40%;
         
+    }
+}
+@media screen and (max-width: 576px){
+    .showTime__title .nav-item {
+        display: block;
+        width: 100%;
     }
 }
